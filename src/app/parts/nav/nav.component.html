@@ -1,0 +1,39 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button (click)="toggle()" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+            <!---->
+            <a class="navbar-brand" [routerLink]="['index']" (click)="toggle()">iShop</a>
+        </div>
+
+        <div id="navbar" class="collapse navbar-collapse" [class.in]="collapsed">
+            <ul class="nav navbar-nav">
+
+                <li routerLinkActive="active">
+                    <a [routerLink]="['index']" (click)="toggle()">Главная</a>
+                </li>
+
+                <li routerLinkActive="active">
+                    <a [routerLink]="['catalog']" (click)="toggle()">Каталог</a>
+                </li>
+
+                <li routerLinkActive="active">
+                    <a [routerLink]="['about']" (click)="toggle()">О нас</a>
+                </li>
+
+                <li routerLinkActive="active">
+                    <a [routerLink]="['contact']" (click)="toggle()">Контакты</a>
+                </li>
+
+            </ul>
+
+            <app-basket></app-basket>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</nav>

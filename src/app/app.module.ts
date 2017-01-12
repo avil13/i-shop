@@ -5,14 +5,27 @@ import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 
 import { appRoutes } from './app.routes';
+import { ApiService } from './services/api.service';
 
 import { AppComponent } from './app.component';
 import { IndexComponent } from './pages/index/index.component';
+import { NavComponent } from './parts/nav/nav.component';
+import { CatalogComponent } from './pages/catalog/catalog.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { BasketComponent } from './parts/basket/basket.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    IndexComponent
+    IndexComponent,
+    NavComponent,
+    CatalogComponent,
+    AboutComponent,
+    ContactComponent,
+    PageNotFoundComponent,
+    BasketComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +33,9 @@ import { IndexComponent } from './pages/index/index.component';
     HttpModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [
+    ApiService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
