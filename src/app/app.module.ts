@@ -15,6 +15,8 @@ import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { BasketComponent } from './parts/basket/basket.component';
+import { PricingComponent } from './parts/pricing/pricing.component';
+import { IndexBgComponent } from './parts/index-bg/index-bg.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { BasketComponent } from './parts/basket/basket.component';
     AboutComponent,
     ContactComponent,
     PageNotFoundComponent,
-    BasketComponent
+    BasketComponent,
+    PricingComponent,
+    IndexBgComponent
   ],
   imports: [
     BrowserModule,
