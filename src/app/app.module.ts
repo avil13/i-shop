@@ -17,6 +17,8 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
 import { BasketComponent } from './parts/basket/basket.component';
 import { PricingComponent } from './parts/pricing/pricing.component';
 import { IndexBgComponent } from './parts/index-bg/index-bg.component';
+import { CartComponent } from './parts/cart/cart.component';
+import { SidebarComponent } from './parts/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { IndexBgComponent } from './parts/index-bg/index-bg.component';
     PageNotFoundComponent,
     BasketComponent,
     PricingComponent,
-    IndexBgComponent
+    IndexBgComponent,
+    CartComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
